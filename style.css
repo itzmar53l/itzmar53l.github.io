@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans" "fangsong";
+  }
+  
+  nav {
+    height: 80px;
+    background-color: transparent;
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  padding: 1rem ;
+  }
+  
+  nav a {
+    text-decoration: thick ;
+    font-size: 117%;
+    font-weight: 10000;
+    color: rgb(0, 0, 0);
+    padding: 0 1.5rem;
+  }
+  
+  nav a:hover {
+    color: rgb(255, 255, 255);
+  }
+  .contact-us {
+    position: 25% ;
+    columns: auto;
+  }
+  .about{
+    text-align: center;
+    max-width: fit-content;
+    display: inline;
+  }
+  .about-org{
+    font-size: 250%;
+  
+    
+  }
+  .about-over{
+    font-style: oblique;
+  }
+  .list{
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 200;
+padding: 50px;
+line-height: 50px;
+}
+  
+
+  .list hr{
+    width: auto;
+  }
+  
+
+
+  .backvideo {
+    position: absolute;
+    right: 0%;
+    bottom: -10%;
+    z-index: -1;
+  }
+
+  .hero {
+    background: none;
+  }
+  
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+  }
+  
+  .column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgb(0, 0, 0);
+    margin: 77px;
+    padding: 2rem 2rem;
+  }
+  
+  .column-left h1 {
+    margin-bottom: 1rem;
+    font-variant: small-caps;
+    font-size: 5rem;
+  }
+  .column-left h2 {
+    font-size: large;
+  }
+  
+  .mid-page {
+margin-bottom: 25%;
+font-size: larger;
+font-weight: 700;
+
+  }
+  .column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 1.0;
+  }
+  
+  button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #f0c000;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  
+  button:hover {
+    background: #fff;
+    color: rgb(0, 0, 0);
+  }
+  
+  .column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+    }
+  }
